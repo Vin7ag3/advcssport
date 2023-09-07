@@ -7,7 +7,7 @@ Create a web application from scratch! An effective portfolio highlights your st
 ## Installation
 
 (https://github.com/Vin7ag3/advcssport)
-deployed page - https://vin7ag3.github.io/vpeocoderefactor/
+deployed page - https://vin7ag3.github.io/advcssport/
 
 ## Usage
 
