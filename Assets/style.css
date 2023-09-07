@@ -1,0 +1,249 @@
+/* css variable declaration */
+:root {
+    --dark: #171717;
+    --light: #d5ceca;
+    --darkred: #8b0000;
+}
+
+/* universal select */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+    background-color: var(--dark);
+    color: var(--light);
+ }
+
+ /* header */
+.nav-bar {
+    background-color: var(--dark);
+    padding: 22px;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+/* navbar */   
+.nav-bar a   {
+    color: var(--light);
+    padding: 1.5rem;
+    cursor:crosshair;
+    text-decoration-line: none;
+}
+
+/* nav bar text */
+.nav-bar a.active {
+    background-color: var(--dark);
+    display: inline;
+}
+
+/* main banner */
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--dark); 
+    color: var(--light);
+    padding: 30px;
+}
+
+/* h1 positioning */
+.portitle {
+    margin: 60px 15px 75px 60px;
+    padding: 30px;
+}
+
+/* content grid */
+.content {
+    width: 1000px;
+    height: 750px;
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: auto auto auto;
+    padding: 50px;
+}
+
+/* boxes normal */
+.box {
+    width: 278px;
+    height: 278px;
+    padding: 120px;
+    font-size: 18px;
+    text-align: center;
+    display: inline-block;
+}
+
+/* boxes normal */
+.box1 {
+    width: 278px;
+    height: 278px;
+    padding: 120px;
+    font-size: 18px;
+    text-align: center;
+    display: inline-block;
+    background-image: url("/Assets/img/pic02.jpg");
+}
+
+/* hover state color normal */
+.box:hover {
+    background: var(--light);
+    color: var(--darkred);
+}
+
+/* box large */
+.boxlg {
+    width: 880px;
+    background-image: url("/Assets/img/pic01.jpg");
+    padding: 80px;
+    font-size: 36px;
+    text-align: center;
+}
+
+/* large box hover state color */
+.boxlg:hover {
+    background: var(--light);
+    color: var(--darkred);
+}
+
+/* box grid color */
+.red {
+    background-color: var(--darkred);
+}
+
+/* footer container + h2 + copyright styling */
+.ftcontainer {
+    margin-top: 10%;
+}
+
+.fthead {
+    display: flex;
+    justify-content: left;
+    margin: 350px auto 100px 130px;
+}
+
+.foot {
+    background-color: var(--dark); 
+    color: var(--light);
+    padding: 20px;
+    width: 100%;
+}
+
+/* contact form */
+#form {
+    position: relative;
+    width: 500px;
+    margin: auto auto 300px 0px;
+    padding: 100px;
+    background-color: var(--dark);
+    height: 50px;
+}
+  
+input {
+    font-size: 0.850em;
+    width: 470px;
+    height: 50px;
+    padding: 0px 15px 0px 15px;
+    background: var(--light);
+    background: transparent;
+    outline: none;
+    border: solid 1px var(--light);
+    border-bottom: none;
+}
+  
+input:hover {
+    background: var(--light);
+    color: var(--light);
+}
+  
+textarea {
+    width: 470px;
+    max-width: 470px;
+    height: 110px;
+    max-height: 110px;
+    padding: 15px;
+    background: transparent;
+    outline: none;
+    color: var(--light);
+    font-size: 0.850em;
+    border: solid 1px var(--light);
+}
+  
+textarea:hover {
+    background: var(--light);
+    color: var(--light);
+}
+  
+#submit {
+    width: 502px;
+    padding: 0;
+    margin: -5px 0px 0px 0px;
+    font-size: 0.850em;
+    color: var(--light);
+    cursor: crosshair;
+    border: solid 1px var(--light);
+    border-top: none;
+}
+  
+#submit:hover {
+    color: var(--light);
+}
+  
+/* Mobile first responsive media queries */
+@media screen and (max-width: 481px) {
+    .content,
+    .box,
+    .boxlg {
+      grid-template-columns: repeat(1, 1fr);
+      padding: 19px;
+      text-align: left;
+      margin: -10px;
+      width: 300px;
+    }
+
+.nav-bar a {
+      margin: 4px;
+    }
+  
+.banner {
+      height: 268vh;
+      padding: 20px;
+    }
+
+#form {
+        padding: 20px;
+    }
+
+.input {
+      width: 328px;
+    }
+  
+input {
+      width: 134px;
+    }
+  
+textarea {
+      width: 304px;
+    }
+#submit {
+        width: 336px;
+    }
+}
+  
+/* Tablet */
+@media screen and (min-width: 768px) {
+    .content,
+    .box,
+    .boxlg {
+      grid-template-columns: repeat(3, 1fr);
+      text-align: left;
+    }
+}
+  
+/* Laptop */
+@media screen and (min-width: 992px) {
+    .content,
+    .box,
+    .boxlg {
+      grid-template-columns: repeat(3, 1fr);
+    }
+}
+
