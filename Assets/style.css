@@ -72,6 +72,12 @@
     display: inline-block;
 }
 
+/* hover state color normal */
+.box:hover {
+    background: var(--light);
+    color: var(--darkred);
+}
+
 /* boxes normal */
 .box1 {
     width: 278px;
@@ -80,13 +86,7 @@
     font-size: 18px;
     text-align: center;
     display: inline-block;
-    background-image: url("Assets/img/pic02.jpg");
-}
-
-/* hover state color normal */
-.box:hover {
-    background: var(--light);
-    color: var(--darkred);
+    background-image: url("img/pic02.jpg");
 }
 
 /* hover state color normal */
@@ -98,7 +98,7 @@
 /* box large */
 .boxlg {
     width: 880px;
-    background-image: url("Assets/img/pic01.jpg");
+    background-image: url("img/pic01.jpg");
     padding: 80px;
     font-size: 36px;
     text-align: center;
