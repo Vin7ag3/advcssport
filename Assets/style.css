@@ -80,7 +80,7 @@
     font-size: 18px;
     text-align: center;
     display: inline-block;
-    background-image: url("/Assets/img/pic02.jpg");
+    background-image: url("Assets/img/pic02.jpg");
 }
 
 /* hover state color normal */
@@ -92,7 +92,7 @@
 /* box large */
 .boxlg {
     width: 880px;
-    background-image: url("/Assets/img/pic01.jpg");
+    background-image: url("Assets/img/pic01.jpg");
     padding: 80px;
     font-size: 36px;
     text-align: center;
