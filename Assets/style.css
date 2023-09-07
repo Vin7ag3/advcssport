@@ -89,6 +89,12 @@
     color: var(--darkred);
 }
 
+/* hover state color normal */
+.box1:hover {
+    background: var(--light);
+    color: var(--darkred);
+}
+
 /* box large */
 .boxlg {
     width: 880px;
