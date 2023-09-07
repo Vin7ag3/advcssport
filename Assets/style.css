@@ -197,6 +197,7 @@ textarea:hover {
 @media screen and (max-width: 481px) {
     .content,
     .box,
+    .box1,
     .boxlg {
       grid-template-columns: repeat(1, 1fr);
       padding: 19px;
@@ -238,6 +239,7 @@ textarea {
 @media screen and (min-width: 768px) {
     .content,
     .box,
+    .box1,
     .boxlg {
       grid-template-columns: repeat(3, 1fr);
       text-align: left;
@@ -248,6 +250,7 @@ textarea {
 @media screen and (min-width: 992px) {
     .content,
     .box,
+    .box1,
     .boxlg {
       grid-template-columns: repeat(3, 1fr);
     }
