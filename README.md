@@ -6,7 +6,7 @@ Create a web application from scratch! An effective portfolio highlights your st
 
 ## Installation
 
-![Screen Capture 002 - Vince Peo Portfolio Proj  - 127 0 0 1](https://github.com/Vin7ag3/advcssport/assets/48032663/8f45a6db-3b10-4da6-a991-01a0675aef74) 
+![Opera Snapshot_2023-09-12_002956_vin7ag3 github io](https://github.com/Vin7ag3/advcssport/assets/48032663/85ab0e82-6e62-4618-9bb9-d7a6cbfeac25)
 Repository - https://github.com/Vin7ag3/advcssport
 deployed page - https://vin7ag3.github.io/advcssport/
 
