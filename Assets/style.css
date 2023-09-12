@@ -2,7 +2,7 @@
 :root {
     --dark: #171717;
     --light: #d5ceca;
-    --darkred: #8b0000;
+    --darkred: #ac3632;
 }
 
 /* universal select */
@@ -12,6 +12,12 @@
     font-family: Helvetica, sans-serif;
     background-color: var(--dark);
     color: var(--light);
+ }
+
+ /* text decoration and background */
+ a {
+    text-decoration: none;
+    background: none;
  }
 
  /* header */
@@ -46,10 +52,46 @@
     padding: 30px;
 }
 
+/* avatar img */
+.banner img {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 30px 0px 0px 50px;
+}
+
+/* h1 element in .banner */
+.banner h1 {
+    position: relative;
+    top: 18px;
+    left: 10px;
+}
+
 /* h1 positioning */
+.title {
+    margin: 30px 20px 70px 147px;
+    padding: 16px;
+}
+
+/* port h1 positioning */
 .portitle {
-    margin: 60px 15px 75px 60px;
-    padding: 30px;
+    margin: 60px 15px 25px 60px;
+    padding: 44px;
+}
+
+.card {
+    margin: 350px 20px 70px 86px;
+    padding: 16px;
+}
+
+/* ul decoration removal */
+ul {
+    list-style-type: none;
+}
+
+
+li:first-child {
+    grid-row: span 2;
 }
 
 /* content grid */
@@ -60,6 +102,17 @@
     column-gap: 10px;
     grid-template-columns: auto auto auto;
     padding: 50px;
+}
+
+/* content grid */
+.content1 {
+    width: 1000px;
+    height: 750px;
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: auto auto auto;
+    padding: 50px;
+    margin: 0px 0px 0px 0px;
 }
 
 /* boxes normal */
@@ -78,6 +131,12 @@
     color: var(--darkred);
 }
 
+/* box image fill */
+.box img {
+    width: 100%;
+    height: 100%;
+}
+
 /* boxes normal */
 .box1 {
     width: 278px;
@@ -86,7 +145,7 @@
     font-size: 18px;
     text-align: center;
     display: inline-block;
-    background-image: url("img/pic02.jpg");
+    background-image: url("img/pic01.jpg");
 }
 
 /* hover state color normal */
@@ -110,6 +169,21 @@
     color: var(--darkred);
 }
 
+/* box large */
+.boxlg1 {
+    width: 880px;
+    /* background-image: url("img/portpic01.jpg"); */
+    padding: 80px;
+    font-size: 36px;
+    text-align: center;
+}
+
+/* large box hover state color */
+.boxlg1:hover {
+    background: var(--light);
+    color: var(--darkred);
+}
+
 /* box grid color */
 .red {
     background-color: var(--darkred);
@@ -123,7 +197,7 @@
 .fthead {
     display: flex;
     justify-content: left;
-    margin: 350px auto 100px 130px;
+    margin: 350px auto 30px 130px;
 }
 
 .foot {
@@ -133,6 +207,48 @@
     width: 100%;
 }
 
+/* contact page */
+.contact-container {
+    max-width: 400px;
+    margin: 0px 0px 20px 100px;
+  }
+
+/* phone + email section */
+.contactlist {
+    list-style-type: none;
+    margin-left: -30px;
+    padding-right: 20px;
+  }
+  
+  .list-item {
+    line-height: 4;
+    color: var(--light);
+  }
+  
+  .contact-text {
+    letter-spacing: 1.9px;
+    color: var(--light);
+  }
+  
+  .phone {
+    margin-left: 56px;
+  }
+  
+  .email {
+    margin-left: 53px;
+  }
+  
+  .contact-text a {
+    color: var(--light);
+    text-decoration: none;
+    transition-duration: 0.2s;
+  }
+  
+  .contact-text a:hover {
+    color: var(--light);
+    text-decoration: none;
+  }
+  
 /* contact form */
 #form {
     position: relative;
@@ -196,16 +312,28 @@ textarea:hover {
 /* Mobile first responsive media queries */
 @media screen and (max-width: 481px) {
     .content,
+    .content1,
     .box,
-    .box1,
-    .boxlg {
+    .box1 {
       grid-template-columns: repeat(1, 1fr);
       padding: 19px;
-      text-align: left;
       margin: -10px;
       width: 300px;
     }
 
+.title {
+    font-size: 24px;
+    padding: 12px;
+    }
+
+.boxlg,
+.boxlg1 {
+      width: 300px;
+      height: 400px;
+      margin: -10px;
+      padding: 19px;
+    }
+    
 .nav-bar a {
       margin: 4px;
     }
@@ -213,6 +341,10 @@ textarea:hover {
 .banner {
       height: 268vh;
       padding: 20px;
+    }
+.contact-container {
+      margin: 0px 0px 20px -20px;
+      text-align: center;
     }
 
 #form {
@@ -239,20 +371,34 @@ textarea {
 @media screen and (min-width: 768px) {
     .content,
     .box,
-    .box1,
+    .box1 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .content1 {
+        grid-template-columns: repeat(4, 1fr);
+    }
     .boxlg {
-      grid-template-columns: repeat(3, 1fr);
       text-align: left;
     }
+    .boxlg1 {
+        text-align: left;
+      }
 }
   
 /* Laptop */
 @media screen and (min-width: 992px) {
     .content,
     .box,
-    .box1,
-    .boxlg {
-      grid-template-columns: repeat(3, 1fr);
+    .box1 {
+        grid-template-columns: repeat(3, 1fr);
     }
-}
-
+    .content1 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .boxlg {
+      text-align: left;
+    }
+    .boxlg1 {
+        text-align: left;
+      }
+}    
